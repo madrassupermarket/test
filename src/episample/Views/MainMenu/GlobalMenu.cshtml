@@ -1,0 +1,13 @@
+﻿@using System.Collections.Generic;
+@using EPiServer.Core;
+@using EPiServer.Web.Mvc.Html
+@model List<PageData>
+
+@if(Model!= null)
+{
+
+    foreach(var page in Model)
+    {
+        <h1>@Html.ContentLink(page.PageLink)</h1>
+    }
+}

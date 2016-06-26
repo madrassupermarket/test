@@ -1,0 +1,12 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+
+@model episamplebase.ContentTypes.StartPage
+@{ Layout = "~/Views/Shared/Layouts/_Root.cshtml"; }
+
+
+<div>
+  @Html.PropertyFor(m => m.MainBody)
+   @Html.PropertyFor(m => m.MainArea)
+
+</div>

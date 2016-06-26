@@ -1,0 +1,18 @@
+﻿
+@using EPiServer.Framework.Web.Mvc.Html
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        This is master page
+               @{Html.RenderPartial("Header"); }
+        <div>
+            @{Html.RenderAction("GlobalMenu", "MainMenu");}
+            @RenderBody()
+        </div>
+     
+    </body>
+</html>
